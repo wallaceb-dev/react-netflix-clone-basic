@@ -1,0 +1,33 @@
+.moviesRuler--listingarea {
+  overflow-x: hidden;
+  padding-left:30px;
+}
+
+.moviesRuler--listing {
+  width: 999999999px;
+}
+
+.moviesRuler {
+  margin-bottom: 30px;
+}
+
+.moviesRuler h2 {
+  margin: 0 0 0 30px;
+}
+
+.moviesRuler--item {
+  display: inline-block;
+  width: 200px;
+  cursor: pointer;
+}
+
+.moviesRuler--item img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease-in 150ms;
+}
+
+.moviesRuler--item img:hover {
+  transform: scale(1);
+  
+}
