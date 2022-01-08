@@ -1,3 +1,22 @@
+A Basic Netflix Clone
+
+![](https://via.placeholder.com/55/111111/61dbfb?text=REACT)
+![](https://via.placeholder.com/55/ead41c/000000?text=JS)
+![](https://via.placeholder.com/55/00a4d6/fff?text=CSS)
+
+### Presentation
+
+A Netflix clone developt using React, Css and Javascript.
+
+It was built as part of a tutorial by [Bonieky Lacerda](https://www.youtube.com/channel/UCw9mYSlqKRXI6l4vH-tAYpQ).
+
+![Mobile](https://github.com/wallaceb-dev/react-netflix-clone-basic/blob/master/mobile.gif)
+![Desktop](https://github.com/wallaceb-dev/react-netflix-clone-basic/blob/master/desktop.gif)
+
+> "Simplicity is the ultimate sophistication", Leonardo Da Vinci
+
+https://github.com/wallaceb-dev/react-magic-game/blob/master/demo.gif
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
