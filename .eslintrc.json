@@ -1,15 +1,19 @@
 {
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module",
-    "allowImportExportEverywhere": true
-  },
   "env": {
-    "es6": true
+    "browser": true,
+    "es2021": true
   },
-  "extends": "eslint:recommended",
+  "extends": "plugin:react/recommended",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 13,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
   "rules": {
-    "quotes": ["error", "single"]
-  },
-  "parser": "babel-eslint",
+    "react/display-name": "off",
+    "react/prop-types": "off"
+  }
 }

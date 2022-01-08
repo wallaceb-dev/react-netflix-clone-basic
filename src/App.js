@@ -3,10 +3,12 @@ import './App.css';
 import Tmdb from './Tmdb';
 import MoviesRuler from './components/MoviesRuler';
 import FeaturedMovie from './components/FeaturedMovie';
+import Header from './components/Header';
 
 export default () => {
   const [categories, setCategories] = useState([]);
   const [featuredData, setFeaturedData] = useState([]);
+  const [darkenHeader, setDarkenHeader] = useState(false);
 
   useEffect(() => {
     const loadAll = async () => {
@@ -26,8 +28,26 @@ export default () => {
     loadAll();
   }, []);
 
+  useEffect(() => {
+    const scrollListener = () => {
+      if (window.scrollY > 10) {
+        setDarkenHeader(true);
+      } else {
+        setDarkenHeader(false);
+      }
+    };
+
+    window.addEventListener('scroll', scrollListener);
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    };
+  }, [darkenHeader]);
+
   return (
     <div className="page">
+      <Header darkenHeader={darkenHeader} />
+
       {featuredData && <FeaturedMovie item={featuredData} />}
 
       <section className="lists">
@@ -39,6 +59,15 @@ export default () => {
           />
         ))}
       </section>
+
+      {categories.length <= 0 && (
+        <div className="loading">
+          <img
+            src="https://www.rchandru.com/images/portfolio/modals/m-loading.gif"
+            alt="Carregando..."
+          />
+        </div>
+      )}
     </div>
   );
 };
