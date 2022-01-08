@@ -15,8 +15,6 @@ It was built as part of a tutorial by [Bonieky Lacerda](https://www.youtube.com/
 
 > "Simplicity is the ultimate sophistication", Leonardo Da Vinci
 
-https://github.com/wallaceb-dev/react-magic-game/blob/master/demo.gif
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
